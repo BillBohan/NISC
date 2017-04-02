@@ -18,9 +18,9 @@ What will be described is NISC6 because data and addresses are 2 to the 6th powe
 ## The Controller
 - There is a state machine which controls overall operation.
 - There are 3 registers which are not directly visible to the programmer.
-   1. SAR Source Address Register
-   2. DAR Destination Address Register
-   3. TMP Temporary Register
+ 1. SAR Source Address Register
+ 2. DAR Destination Address Register
+ 3. TMP Temporary Register
 - Everything else is memory mapped starting at the beginning of memory. There is a single memory space.
 - The memory is not byte addressable like many processors. Each address holds 64 bits. It is Little Endian where applicable.
 - Peripherals should be memory mapped.
