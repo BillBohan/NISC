@@ -49,4 +49,43 @@ RAM is mapped after the peripherals and before ROM.
     <tr>
     <td>Addr</td><td>Width</td><td>Name</td><td>Read</td><td>Write</td><td>DMA Rd</td><td>DMA Wr</td>
     </tr>
+<tr>
+<td>0000</td><td>64</td><td>AP</td><td>AP</td><td>Jump</td><td>AP</td><td>AP</td>
+</tr>
+<tr>
+<td>0001</td><td>64</td><td>APX</td><td>(AP++)</td><td>Call</td><td>0</td><td>no effect</td>
+</tr>
+<tr>
+<td>0002</td><td>64</td><td>RND</td><td>Random</td><td>Rel Jump</td><td>RND</td><td>no effect</td>
+</tr>
+<tr>
+<td>0003</td><td>64</td><td>CTR</td><td>Count</td><td> Rel Call</td><td>CTR</td><td>no effect</td>
+</tr>
+<tr>
+<td>0004</td><td>64</td><td>IAR</td><td>Int Addr Reg</td><td>Int Addr</td><td>-0-,IAR</td><td>IAR</td>
+</tr>
+<tr>
+<td>0005</td><td>64</td><td>ICR</td><td>Int Ctrl Reg</td><td>Int Ctrl Reg</td><td>ICR</td><td>ICR</td>
+</tr>
+<tr>
+<td>0006</td><td>64</td><td>DMACR</td><td>DMA Ctrl Reg</td><td>DMA Ctrl Reg</td><td>DMACR</td><td>DMACR</td>
+</tr>
+<tr>
+<td>0007</td><td>64</td><td>BLKCNT</td><td> BLKCNT Reg</td><td>BLKCNT Reg</td><td>0</td><td>no effect</td>
+</tr>
+<tr>
+<td>0008</td><td>64</td><td>BLK</td><td>BLKCTRL Reg</td><td> BLKCTRL Reg</td><td>0</td><td>no effect</td>
+</tr>
+<tr>
+<td>0009</td><td>64</td><td>ACC</td><td>ACC</td><td> ACC</td><td> ACC</td><td>ACC</td>
+</tr>
+<tr>
+<td>000A</td><td>64</td><td>AND</td><td>ACC</td><td> TMP AND ACC->ACC</td><td> ACC</td><td>no effect</td>
+</tr>
+<tr>
+<td>000B</td><td>64</td><td>OR</td><td> ACC</td><td> TMP OR ACC->ACC</td><td> ACC</td><td> no effect</td>
+</tr>
 </table>
+NOTES:
+  1. DMA Read and Write must be different to avoid triggering the TTA effects.
+  
