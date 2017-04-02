@@ -1,7 +1,8 @@
 # NISC
-A single instruction set processor architecture
-This is my first time using Github.
-Currently only specifications are given and may be further refined. VHDL code to follow when specs are firm.
+A single instruction set processor architecture  
+This is my first time using Github.  
+Currently only specifications are given and may be further refined.  
+VHDL code to follow when specs are firm.
 ## About NISC
 NISC is my particular brand of One Instruction Set Computer (OISC) with Transport Triggered Architecture (TTA). The operation it performs is Move.
 I call it NISC for Null Instruction Set Computer because the set of all opcodes is the null set.
