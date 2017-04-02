@@ -62,7 +62,7 @@ RAM is mapped after the peripherals and before ROM.
 <td>0003</td><td>64</td><td>CTR</td><td>Count</td><td> Rel Call</td><td>CTR</td><td>no effect</td>
 </tr>
 <tr>
-<td>0004</td><td>64</td><td>IAR</td><td>Int Addr Reg</td><td>Int Addr</td><td>-0-,IAR</td><td>IAR</td>
+<td>0004</td><td>64</td><td>IAR</td><td>Int Addr Reg</td><td>Int Addr</td><td>IAR</td><td>IAR</td>
 </tr>
 <tr>
 <td>0005</td><td>64</td><td>ICR</td><td>Int Ctrl Reg</td><td>Int Ctrl Reg</td><td>ICR</td><td>ICR</td>
@@ -74,18 +74,19 @@ RAM is mapped after the peripherals and before ROM.
 <td>0007</td><td>64</td><td>BLKCNT</td><td> BLKCNT Reg</td><td>BLKCNT Reg</td><td>0</td><td>no effect</td>
 </tr>
 <tr>
-<td>0008</td><td>64</td><td>BLK</td><td>BLKCTRL Reg</td><td> BLKCTRL Reg</td><td>0</td><td>no effect</td>
+<td>0008</td><td>64</td><td>BLKCTRL</td><td>BLKCTRL Reg</td><td> BLKCTRL Reg</td><td>0</td><td>no effect</td>
 </tr>
 <tr>
 <td>0009</td><td>64</td><td>ACC</td><td>ACC</td><td> ACC</td><td> ACC</td><td>ACC</td>
 </tr>
 <tr>
-<td>000A</td><td>64</td><td>AND</td><td>ACC</td><td> TMP AND ACC->ACC</td><td> ACC</td><td>no effect</td>
+<td>000A</td><td>64</td><td>AND</td><td>ACC</td><td> TMP AND ACC=>ACC</td><td> ACC</td><td>no effect</td>
 </tr>
 <tr>
-<td>000B</td><td>64</td><td>OR</td><td> ACC</td><td> TMP OR ACC->ACC</td><td> ACC</td><td> no effect</td>
+<td>000B</td><td>64</td><td>OR</td><td> ACC</td><td> TMP OR ACC=>ACC</td><td> ACC</td><td> no effect</td>
 </tr>
 </table>
 NOTES:
   1. DMA Read and Write must be different to avoid triggering the TTA effects.
+  2. Only the 4 lowest hex digits of address are shown. The high 12 digits are all 0's.
   
