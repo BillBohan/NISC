@@ -4,14 +4,15 @@ This is my first time using Github.
 Currently only specifications are given and may be further refined.  
 VHDL code to follow when specs are firm.
 ## About NISC
-NISC is my particular brand of One Instruction Set Computer (OISC) with Transport Triggered Architecture (TTA). The operation it performs is Move.
-I call it NISC for Null Instruction Set Computer because the set of all opcodes is the null set.
-There is no instruction which tells it to Move. It just Moves.
-I didn't want to call it SISC for Single Instruction Set Computer because SISC sounds like CISC and I like to avoid confusion. I also ruled out Mono-Instuction Set Computer (MISC) because I didn't want it filed under Misc.
-Although there is no opcode, instructions take two (or three) arguments.
-The arguments are source address, destination address, and immediate data.
-The source address and destination address are always present but the immediate data is optional.
-NISC is an entire family with a scalable architecture.
+NISC is my particular brand of One Instruction Set Computer (OISC) with Transport Triggered Architecture (TTA).  
+The operation it performs is Move.  
+I call it NISC for Null Instruction Set Computer because the set of all opcodes is the null set.  
+There is no instruction which tells it to Move. It just Moves.  
+I didn't want to call it SISC for Single Instruction Set Computer because SISC sounds like CISC and I like to avoid confusion. I also ruled out Mono-Instuction Set Computer (MISC) because I didn't want it filed under Misc.  
+Although there is no opcode, instructions take two (or three) arguments.  
+The arguments are source address, destination address, and immediate data.  
+The source address and destination address are always present but the immediate data is optional.  
+NISC is an entire family with a scalable architecture.  
 What will be described is NISC6 because data and addresses are 2 to the 6th power (64 bits). NISC5 has 32 bit data and addresses. 
 ## The Controller
 - There is a state machine which controls overall operation.
