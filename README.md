@@ -191,16 +191,28 @@ ROM is expected at the highest part of memory.
 <td>00Fx</td><td>64</td><td>RegFx</td><td>(++RegAx)</td><td> (RegAx--)</td><td> RegAx</td><td>no effect</td><td>30, 36</td>
 </tr>
 <tr>
-<td>0100</td><td>64</td><td>CHOP</td><td> CHOP</td><td>CHOP</td><td>CHOP</td><td> CHOP</td><td> </td>
+<td>0100</td><td>64</td><td>CHOP</td><td> CHOP</td><td>CHOP</td><td>CHOP</td><td> CHOP</td><td>37</td>
 </tr>
 <tr>
-<td>0101</td><td>64</td><td>CHOPI</td><td>(CHOP)</td><td>(CHOP)</td><td>0</td><td>no effect</td><td> </td>
+<td>0101</td><td>64</td><td>CHOPI</td><td>(CHOP)</td><td>(CHOP)</td><td>0</td><td>no effect</td><td>38</td>
 </tr>
 <tr>
-<td>0102<br>0103</td><td>32</td><td>CHOPLH<br>CHOPHH</td><td><br>CHOP(63 downto 32)</td><td>CHOP(31 downto 0)<br>CHOP(63 downto 32)</td><td>0</td><td>no effect</td><td> </td>
+<td>0102<br>0103</td><td>32</td><td>CHOPLH<br>CHOPHH</td><td>CHOP(31 downto 0)<br>CHOP(63 downto 32)</td><td>CHOP(31 downto 0)<br>CHOP(63 downto 32)</td><td>0</td><td>no effect</td><td>39</td>
 </tr>
 <tr>
-<td>0104<br>0105<br>0106<br>0107</td><td>16</td><td>CHOPQ0<br>CHOPQ1<br>CHOPQ2<br>CHOPQ3</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>0</td><td>no effect</td><td> </td>
+<td>0104<br>0105<br>0106<br>0107</td><td>16</td><td>CHOPQ0<br>CHOPQ1<br>CHOPQ2<br>CHOPQ3</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>0</td><td>no effect</td><td>40</td>
+</tr>
+<tr>
+<td>0108<br>to<br>010F</td><td>8</td><td>CHOPB0<br>to<br>CHOPB7</td><td>CHOP(7 downto 0)<br>to<br>CHOP(63 downto 56)</td><td>CHOP(7 downto 0)<br>to<br>CHOP(63 downto 56)</td><td>0</td><td>no effect</td><td>41</td>
+</tr>
+<tr>
+<td>0110<br>to<br>011F</td><td>4</td><td>CHOPN0<br>to<br>CHOPN15</td><td>CHOP(3 downto 0)<br>to<br>CHOP(63 downto 60)</td><td>CHOP(3 downto 0)<br>to<br>CHOP(63 downto 60)</td><td>0</td><td>no effect</td><td>42</td>
+</tr>
+<tr>
+<td>0120<br>to<br>013F</td><td>2</td><td>CHOPP0<br>to<br>CHOPP31</td><td>CHOP(1 downto 0)<br>to<br>CHOP(63 downto 62)</td><td>CHOP(1 downto 0)<br>to<br>CHOP(63 downto 62)</td><td>0</td><td>no effect</td><td>43</td>
+</tr>
+<tr>
+<td>0140<br>to<br>017F</td><td>1</td><td>CHOPB0<br>to<br>CHOPB63</td><td>CHOP(0)<br>to<br>CHOP(63)</td><td>CHOP(0)<br>to<br>CHOP(63)</td><td>0</td><td>no effect</td><td>44</td>
 </tr>
 </table>
 
@@ -250,3 +262,11 @@ NOTES:
 35. These addresses use the Ax registers as stack pointers. Postincremented read, Predecremented write.
 36. These addresses use the Ax registers as stack pointers. Preincremented read, Postdecremented write.
   - 00FF is the system stack used for Call and Relative Call when the AP gets pushed.
+37. There is only one register in the next 0x80 addresses. It gets CHOPped into pieces and put back together.
+38. CHOP may be used as a memory pointer by using this address.
+39. CHOP Low Half and Chop High Half are read and written here. They are in the low bits of a read. The high bits of the read are all zeroes. Only the low bits of a write are used. The high bits of the write are irrelevant and ignored.
+40. CHOP in 4 16-bit quarters. Upper bits are zeroes for read and don't care for write.
+41. CHOP 8 Bytes.
+42. CHOP 16 Nibbles (4 Bits each).
+43. CHOP Pairs of Bits. There are 32 of them.
+44. CHOP Bits, all 64 of them individually addressable.
