@@ -167,25 +167,28 @@ ROM is expected at the highest part of memory.
 <td>002F</td><td>64</td><td>WRegF</td><td>WRegF</td><td> WRegF</td><td> WRegF</td><td>WRegF</td><td>27</td>
 </tr>
 <tr>
-<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>28</td>
+<td>0030<br>to<br>006F</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>28</td>
 </tr>
 <tr>
-<td>00Ax</td><td>64</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>29, 30</td>
+<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>29</td>
 </tr>
 <tr>
-<td>00Bx</td><td>64</td><td>RegBx</td><td>(RegAx)</td><td>(RegAx)</td><td>RegAx</td><td>no effect</td><td>29, 31</td>
+<td>00Ax</td><td>64</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>30, 31</td>
 </tr>
 <tr>
-<td>00Cx</td><td>64</td><td>RegCx</td><td>(RegAx--)</td><td>(++RegAx)</td><td>RegAx</td><td>no effect</td><td>29, 32</td>
+<td>00Bx</td><td>64</td><td>RegBx</td><td>(RegAx)</td><td>(RegAx)</td><td>RegAx</td><td>no effect</td><td>30, 32</td>
 </tr>
 <tr>
-<td>00Dx</td><td>64</td><td>RegDx</td><td>(--RegAx)</td><td>(RegAx++)</td><td>RegAx</td><td>no effect</td><td>29, 33</td>
+<td>00Cx</td><td>64</td><td>RegCx</td><td>(RegAx--)</td><td>(++RegAx)</td><td>RegAx</td><td>no effect</td><td>30, 33</td>
 </tr>
 <tr>
-<td>00Ex</td><td>64</td><td>RegEx</td><td>(RegAx++)</td><td>(--RegAx)</td><td>RegAx</td><td>no effect</td><td>29, 34</td>
+<td>00Dx</td><td>64</td><td>RegDx</td><td>(--RegAx)</td><td>(RegAx++)</td><td>RegAx</td><td>no effect</td><td>30, 34</td>
 </tr>
 <tr>
-<td>00Fx</td><td>64</td><td>RegFx</td><td>(++RegAx)</td><td> (RegAx--)</td><td> RegAx</td><td>no effect</td><td>29, 35</td>
+<td>00Ex</td><td>64</td><td>RegEx</td><td>(RegAx++)</td><td>(--RegAx)</td><td>RegAx</td><td>no effect</td><td>30, 35</td>
+</tr>
+<tr>
+<td>00Fx</td><td>64</td><td>RegFx</td><td>(++RegAx)</td><td> (RegAx--)</td><td> RegAx</td><td>no effect</td><td>30, 36</td>
 </tr>
 </table>
 
@@ -225,12 +228,13 @@ NOTES:
 25. Write to Z sets the value returned when reading either Z or NZ if ZF is set when reading.
 26. Write to NZ sets the value returned when reading either Z or NZ if ZF is clear when reading.
 27. Working Registers. These 16 registers do nothing special. They are just like RAM except they never generate wait states.
-28. A lot of space for more stuff.
-29. x here means all values from 0 to F.
-30. There are sixteen registers.
-31. These addresses use the Ax registers as memory pointers for read and write.
-32. These addresses use the Ax registers as stack pointers. Postdecremented read, Preincremented write.
-33. These addresses use the Ax registers as stack pointers. Predecremented read, Postincremented write.
-34. These addresses use the Ax registers as stack pointers. Postincremented read, Predecremented write.
-35. These addresses use the Ax registers as stack pointers. Preincremented read, Postdecremented write.
+28. Barrel Rotate. There is only one register here. All addresses in this range read and write to it rotated relative to their addresses. Write to 30 and read from 31 rotates one bit to the right. Write to 38 and read from 30 rotates 8 bits to the left.
+29. Space for more stuff.
+30. x here means all values from 0 to F.
+31. There are sixteen registers.
+32. These addresses use the Ax registers as memory pointers for read and write.
+33. These addresses use the Ax registers as stack pointers. Postdecremented read, Preincremented write.
+34. These addresses use the Ax registers as stack pointers. Predecremented read, Postincremented write.
+35. These addresses use the Ax registers as stack pointers. Postincremented read, Predecremented write.
+36. These addresses use the Ax registers as stack pointers. Preincremented read, Postdecremented write.
   - 00FF is the system stack used for Call and Relative Call when the AP gets pushed.
