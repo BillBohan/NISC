@@ -190,6 +190,18 @@ ROM is expected at the highest part of memory.
 <tr>
 <td>00Fx</td><td>64</td><td>RegFx</td><td>(++RegAx)</td><td> (RegAx--)</td><td> RegAx</td><td>no effect</td><td>30, 36</td>
 </tr>
+<tr>
+<td>0100</td><td>64</td><td>CHOP</td><td> CHOP</td><td>CHOP</td><td>CHOP</td><td> CHOP</td><td> </td>
+</tr>
+<tr>
+<td>0101</td><td>64</td><td>CHOPI</td><td>(CHOP)</td><td>(CHOP)</td><td>0</td><td>no effect</td><td> </td>
+</tr>
+<tr>
+<td>0102</td><td>32</td><td>CHOPLH</td><td>CHOP(31 downto 0)</td><td>CHOP(31 downto )</td><td>0</td><td>no effect</td><td> </td>
+</tr>
+<tr>
+<td>0103</td><td>32</td><td>CHOPHH</td><td>CHOP(63 downto 32)</td><td>CHOP(63 downto 32)</td><td>0</td><td>no effect</td><td> </td>
+</tr>
 </table>
 
 NOTES:
