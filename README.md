@@ -197,10 +197,10 @@ ROM is expected at the highest part of memory.
 <td>0101</td><td>64</td><td>CHOPI</td><td>(CHOP)</td><td>(CHOP)</td><td>0</td><td>no effect</td><td> </td>
 </tr>
 <tr>
-<td>0102</td><td>32</td><td>CHOPLH</td><td>CHOP(31 downto 0)</td><td>CHOP(31 downto )</td><td>0</td><td>no effect</td><td> </td>
+<td>0102<br>0103</td><td>32</td><td>CHOPLH<br>CHOPHH</td><td><br>CHOP(63 downto 32)</td><td>CHOP(31 downto 0)<br>CHOP(63 downto 32)</td><td>0</td><td>no effect</td><td> </td>
 </tr>
 <tr>
-<td>0103</td><td>32</td><td>CHOPHH</td><td>CHOP(63 downto 32)</td><td>CHOP(63 downto 32)</td><td>0</td><td>no effect</td><td> </td>
+<td>0104<br>0105<br>0106<br>0107</td><td>16</td><td>CHOPQ0<br>CHOPQ1<br>CHOPQ2<br>CHOPQ3</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>0</td><td>no effect</td><td> </td>
 </tr>
 </table>
 
