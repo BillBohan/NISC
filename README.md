@@ -85,8 +85,24 @@ RAM is mapped after the peripherals and before ROM.
 <tr>
 <td>000B</td><td>64</td><td>OR</td><td> ACC</td><td> TMP OR ACC=>ACC</td><td> ACC</td><td> no effect</td>
 </tr>
+<tr>
+<td>000C</td><td>64</td><td>XOR</td><td> ACC</td><td> TMP XOR ACC=>ACC</td><td> ACC</td><td> no effect</td>
+</tr>
+<tr>
+<td>000D</td><td>64</td><td>ADD</td><td> ACC</td><td> TMP + ACC=>ACC</td><td> ACC</td><td> no effect</td>
+</tr>
+<tr>
+<td>000E</td><td>64</td><td>ADC</td><td> ACC</td><td> TMP + ACC + C=>ACC</td><td> ACC</td><td> no effect</td>
+</tr>
+<tr>
+<td>000F</td><td>64</td><td>SUB</td><td> ACC</td><td> ACC - TMP=>ACC</td><td> ACC</td><td> no effect</td>
+</tr>
+<tr>
+<td>0010</td><td>64</td><td>SBB</td><td> ACC</td><td> ACC - TMP - C=>ACC</td><td> ACC</td><td> no effect</td>
+</tr>
 </table>
+
 NOTES:
-  1. DMA Read and Write must be different to avoid triggering the TTA effects.
-  2. Only the 4 lowest hex digits of address are shown. The high 12 digits are all 0's.
+1. DMA Read and Write must be different to avoid triggering the TTA effects.
+2. Only the 4 lowest hex digits of address are shown. The high 12 digits are all 0's.
   
