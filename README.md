@@ -7,7 +7,7 @@ VHDL code to follow when specs are firm.
 NISC is my particular brand of One Instruction Set Computer (OISC) with Transport Triggered Architecture (TTA).  
 The operation it performs is Move.  
 I call it NISC for Null Instruction Set Computer because the set of all opcodes is the null set.  
-There is no instruction which tells it to Move. It just Moves. 
+There is no instruction which tells it to Move. It just Moves.  
 It is not related to [No Instruction Set Computing](https://en.wikipedia.org/wiki/No_instruction_set_computing).  
 I didn't want to call it SISC for Single Instruction Set Computer because SISC sounds like CISC and I like to avoid confusion. I wasn't sure how to pronounce OISC. I also ruled out Mono-Instuction Set Computer (MISC) because I didn't want it filed under Misc.  
 Although there is no opcode, instructions take two (or three) arguments.  
