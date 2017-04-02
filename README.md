@@ -22,7 +22,8 @@ What will be described is NISC6 because data and addresses are 2 to the 6th powe
  2. DAR Destination Address Register
  3. TMP Temporary Register
 - Everything else is memory mapped starting at the beginning of memory. There is a single memory space.
-- The memory is not byte addressable like many processors. Each address holds 64 bits. It is Little Endian where applicable.
+- The memory is not byte addressable like many processors. Each address holds a 64 bit Word.
+- It is Little Endian where applicable.
 - Peripherals should be memory mapped.
  
 This is the VonNewman version with unified code and data address space.
@@ -37,3 +38,15 @@ The state machine controller normally cycles through 4 states:
 and then it repeats.
 
 Before it gets to state 1 the machine looks for Int and DMA Requests and will go to other states to acknowledge them. Once state 1 starts Int and DMA Requests will not be accepted again until state 4 finishes. Block instructions also alter this cycle by repeating state 3 and/or state 4 a counted number of times.
+## Address Definitions
+### Overview
+Processor addresses start at the beginning of memory.  
+ROM is expected at the highest part of memory.  
+Peripherals should be mapped following the processor addresses.  
+RAM is mapped after the peripherals and before ROM.  
+### Processor Addresses
+<table>
+    <tr>
+    <td>Addr</td><td>Width</td><td>Name</td><td>Read</td><td>Write</td><td>DMA Rd</td><td>DMA Wr</td>
+    </tr>
+</table>
