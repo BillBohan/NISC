@@ -1,9 +1,9 @@
 # NISC
 A single instruction set processor architecture  
 This is my first time using Github.  
-Currently only specifications are given and may be further refined.  
+Currently only preliminary specifications are given and may be further refined.  
 Suggestions and requests are welcome.  
-When I figure out how I would like to list proposals and have a vote on which to implement.  
+When I figure out how to do it I would like to list proposals and have a vote on which to implement.  
 Implementing this might be a good project for a processor design course.  
 VHDL code to follow when specs are firm.
 ## About NISC
@@ -214,6 +214,12 @@ ROM is expected at the highest part of memory.
 <tr>
 <td>0140<br>to<br>017F</td><td>1</td><td>CHOPB0<br>to<br>CHOPB63</td><td>CHOP(0)<br>to<br>CHOP(63)</td><td>CHOP(0)<br>to<br>CHOP(63)</td><td>0</td><td>no effect</td><td>44</td>
 </tr>
+<tr>
+<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>29</td>
+</tr>
+<tr>
+<td>10000<br>to<br>1FFFF</td><td>64</td><td>CONST</td><td>0000<br>to<br>FFFF</td><td>no effect</td><td>0000<br>to<br>FFFF</td><td>no effect</td><td>45</td>
+</tr>
 </table>
 
 NOTES:
@@ -270,3 +276,4 @@ NOTES:
 42. CHOP 16 Nibbles (4 Bits each).
 43. CHOP Pairs of Bits. There are 32 of them.
 44. CHOP Bits, all 64 of them individually addressable.
+45. Small constant ROM. There is not actually a ROM here. With a little bit of hardware we can detect reads in this range and return the low 16 bits of address, eliminating the need to store small constants in the 0000-FFFF range in memory or to use them as immediate data in APX read instruction. With the huge memory space we have, I don't consider this wasteful.
