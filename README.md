@@ -43,10 +43,10 @@ and then it repeats.
 Before it gets to state 1 the machine looks for Int and DMA Requests and will go to other states to acknowledge them. Once state 1 starts Int and DMA Requests will not be accepted again until state 4 finishes. Block instructions also alter this cycle by repeating state 3 and/or state 4 a counted number of times.
 ## Address Definitions
 ### Overview
-Processor addresses start at the beginning of memory.  
-ROM is expected at the highest part of memory.  
+Processor addresses start at the beginning of memory. 128K Words Reserved for processor internals.  
 Peripherals should be mapped following the processor addresses.  
 RAM is mapped after the peripherals and before ROM.  
+ROM is expected at the highest part of memory.  
 ### Processor Addresses
 <table>
     <tr>
@@ -166,14 +166,36 @@ RAM is mapped after the peripherals and before ROM.
 <tr>
 <td>002F</td><td>64</td><td>WRegF</td><td>WRegF</td><td> WRegF</td><td> WRegF</td><td>WRegF</td><td>27</td>
 </tr>
+<tr>
+<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>28</td>
+</tr>
+<tr>
+<td>00Ax</td><td>64</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>29, 30</td>
+</tr>
+<tr>
+<td>00Bx</td><td>64</td><td>RegBx</td><td>(RegAx)</td><td>(RegAx)</td><td>RegAx</td><td>no effect</td><td>29, 31</td>
+</tr>
+<tr>
+<td>00Cx</td><td>64</td><td>RegCx</td><td>(RegAx--)</td><td>(++RegAx)</td><td>RegAx</td><td>no effect</td><td>29, 32</td>
+</tr>
+<tr>
+<td>00Dx</td><td>64</td><td>RegDx</td><td>(--RegAx)</td><td>(RegAx++)</td><td>RegAx</td><td>no effect</td><td>29, 33</td>
+</tr>
+<tr>
+<td>00Ex</td><td>64</td><td>RegEx</td><td>(RegAx++)</td><td>(--RegAx)</td><td>RegAx</td><td>no effect</td><td>29, 34</td>
+</tr>
+<tr>
+<td>00Fx</td><td>64</td><td>RegFx</td><td>(++RegAx)</td><td> (RegAx--)</td><td> RegAx</td><td>no effect</td><td>29, 35</td>
+</tr>
 </table>
 
 NOTES:
 1. DMA Read and Write must be different to avoid triggering the TTA effects.
 2. Only the 4 lowest hex digits of address are shown. The high 12 digits are all 0's.
 3. Addresses not shown (skipped) are undefined and should Read as 0. Write should have no effect.
-4. Argument Pointer is the same as a Program Counter.
+4. Argument Pointer is the same as a Program Counter. Reset sets all bits.
 5. Reading APX reads from memory pointed to by AP and increments AP. Writing APX pushes AP onto the stack and loads AP (Call).
+  - Reading APX is the only instruction which uses the third argument as immediate data.
 6. RND is an LFSR (Read only) which shifts on each clock. Writing adds to AP (Relative Jump).
 7. CTR is an up-counter incremented on every clock. Writing CTR pushes AP onto the stack and adds to AP (Relative Call).
 8. Interrupt Address Register holds the address of the ISR (Interrupt Service Routine) called during Interrupt Acknowledge.
@@ -203,3 +225,12 @@ NOTES:
 25. Write to Z sets the value returned when reading either Z or NZ if ZF is set when reading.
 26. Write to NZ sets the value returned when reading either Z or NZ if ZF is clear when reading.
 27. Working Registers. These 16 registers do nothing special. They are just like RAM except they never generate wait states.
+28. A lot of space for more stuff.
+29. x here means all values from 0 to F.
+30. There are sixteen registers.
+31. These addresses use the Ax registers as memory pointers for read and write.
+32. These addresses use the Ax registers as stack pointers. Postdecremented read, Preincremented write.
+33. These addresses use the Ax registers as stack pointers. Predecremented read, Postincremented write.
+34. These addresses use the Ax registers as stack pointers. Postincremented read, Predecremented write.
+35. These addresses use the Ax registers as stack pointers. Preincremented read, Postdecremented write.
+  - 00FF is the system stack used for Call and Relative Call when the AP gets pushed.
