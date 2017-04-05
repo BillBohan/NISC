@@ -170,6 +170,18 @@ ROM is expected at the highest part of memory.
 <td>0030<br>to<br>006F</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>28</td>
 </tr>
 <tr>
+<td>0070</td><td>64</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>46</td>
+</tr>
+<tr>
+<td>0071</td><td>64</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>47</td>
+</tr>
+<tr>
+<td>0072</td><td>64</td><td>Und1</td><td>Und1<br>or<br>Ovr1</td><td>Und1</td><td>Und1</td><td>Und1</td><td>48</td>
+</tr>
+<tr>
+<td>0073</td><td>64</td><td>Ovr1</td><td>Und1<br>or<br>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>49</td>
+</tr>
+<tr>
 <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>29</td>
 </tr>
 <tr>
@@ -277,3 +289,7 @@ NOTES:
 43. CHOP Pairs of Bits. There are 32 of them.
 44. CHOP Bits, all 64 of them individually addressable.
 45. Small constant ROM. There is not actually a ROM here. With a little bit of hardware we can detect reads in this range and return the low 16 bits of address, eliminating the need to store small constants in the 0000-FFFF range in memory or to use them as immediate data in APX read instruction. With the huge memory space we have, I don't consider this wasteful.
+46. Unsigned counter which counts up when Und1 or Ovr1 is read.
+47. Unsigned Limit register against which Cnt1 is compared.
+48. Unsigned register which returns Und1 if Cnt1 < Lim1 else returns Ovr1. Reading increments Cnt1. DMA Rd does not affect Cnt1.
+49. Unsigned register which returns Ovr1 if Cnt1 >= Lim1 else returns Und1. Reading increments Cnt1.
