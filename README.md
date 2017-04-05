@@ -170,6 +170,102 @@ ROM is expected at the highest part of memory.
 <td>0030<br>to<br>006F</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>28</td>
 </tr>
 <tr>
+<td>0070</td><td>64</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>46</td>
+</tr>
+<tr>
+<td>0071</td><td>64</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>47</td>
+</tr>
+<tr>
+<td>0072</td><td>64</td><td>Und1</td><td>Und1<br>or<br>Ovr1</td><td>Und1</td><td>Und1</td><td>Und1</td><td>48</td>
+</tr>
+<tr>
+<td>0073</td><td>64</td><td>Ovr1</td><td>Und1<br>or<br>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>49</td>
+</tr>
+<tr>
+<td>0074</td><td>64</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>50</td>
+</tr>
+<tr>
+<td>0075</td><td>64</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>51</td>
+</tr>
+<tr>
+<td>0076</td><td>64</td><td>Und2</td><td>Und2<br>or<br>Ovr2</td><td>Und2</td><td>Und2</td><td>Und2</td><td>52</td>
+</tr>
+<tr>
+<td>0077</td><td>64</td><td>Ovr2</td><td>Und2<br>or<br>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>53</td>
+</tr>
+<tr>
+<td>0078</td><td>64</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>50</td>
+</tr>
+<tr>
+<td>0079</td><td>64</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>51</td>
+</tr>
+<tr>
+<td>007A</td><td>64</td><td>Und3</td><td>Und3<br>or<br>Ovr3</td><td>Und3</td><td>Und3</td><td>Und3</td><td>52</td>
+</tr>
+<tr>
+<td>007B</td><td>64</td><td>Ovr3</td><td>Und3<br>or<br>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>53</td>
+</tr>
+<tr>
+<td>007C</td><td>64</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>50</td>
+</tr>
+<tr>
+<td>007D</td><td>64</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>51</td>
+</tr>
+<tr>
+<td>007E</td><td>64</td><td>Und4</td><td>Und4<br>or<br>Ovr4</td><td>Und4</td><td>Und4</td><td>Und4</td><td>52</td>
+</tr>
+<tr>
+<td>007F</td><td>64</td><td>Ovr4</td><td>Und4<br>or<br>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>53</td>
+</tr>
+<tr>
+<td>0080</td><td>64</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>50</td>
+</tr>
+<tr>
+<td>0081</td><td>64</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>51</td>
+</tr>
+<tr>
+<td>0082</td><td>64</td><td>Und5</td><td>Und5<br>or<br>Ovr5</td><td>Und5</td><td>Und5</td><td>Und5</td><td>52</td>
+</tr>
+<tr>
+<td>0083</td><td>64</td><td>Ovr5</td><td>Und5<br>or<br>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>53</td>
+</tr>
+<tr>
+<td>0084</td><td>64</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>50</td>
+</tr>
+<tr>
+<td>0085</td><td>64</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>51</td>
+</tr>
+<tr>
+<td>0086</td><td>64</td><td>Und6</td><td>Und6<br>or<br>Ovr6</td><td>Und6</td><td>Und6</td><td>Und6</td><td>52</td>
+</tr>
+<tr>
+<td>0087</td><td>64</td><td>Ovr6</td><td>Und6<br>or<br>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>53</td>
+</tr>
+<tr>
+<td>0088</td><td>64</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>50</td>
+</tr>
+<tr>
+<td>0089</td><td>64</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>51</td>
+</tr>
+<tr>
+<td>008A</td><td>64</td><td>Und7</td><td>Und7<br>or<br>Ovr7</td><td>Und7</td><td>Und7</td><td>Und7</td><td>52</td>
+</tr>
+<tr>
+<td>008B</td><td>64</td><td>Ovr7</td><td>Und7<br>or<br>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>53</td>
+</tr>
+<tr>
+<td>008C</td><td>64</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>50</td>
+</tr>
+<tr>
+<td>008D</td><td>64</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>51</td>
+</tr>
+<tr>
+<td>008E</td><td>64</td><td>Und8</td><td>Und8<br>or<br>Ovr8</td><td>Und8</td><td>Und8</td><td>Und8</td><td>52</td>
+</tr>
+<tr>
+<td>008F</td><td>64</td><td>Ovr8</td><td>Und8<br>or<br>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>53</td>
+</tr>
+<tr>
 <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>29</td>
 </tr>
 <tr>
@@ -277,3 +373,11 @@ NOTES:
 43. CHOP Pairs of Bits. There are 32 of them.
 44. CHOP Bits, all 64 of them individually addressable.
 45. Small constant ROM. There is not actually a ROM here. With a little bit of hardware we can detect reads in this range and return the low 16 bits of address, eliminating the need to store small constants in the 0000-FFFF range in memory or to use them as immediate data in APX read instruction. With the huge memory space we have, I don't consider this wasteful.
+46. Unsigned counter which counts down when Und1 is read and counts up when Ovr1 is read.
+47. Unsigned Limit register against which Cnt1 is compared.
+48. Unsigned register which returns Und1 if Cnt1 =< Lim1 else returns Ovr1. Reading decrements Cnt1. DMA Rd does not affect Cnt1.
+49. Unsigned register which returns Ovr1 if Cnt1 >= Lim1 else returns Und1. Reading increments Cnt1. DMA Rd does not affect Cnt1.
+50. Unsigned counter similar to Cnt1.
+51. Unsigned Limit register similar to Lim1.
+52. Unsigned register similar to Und1.
+53. Unsigned register similar to Ovr1.
