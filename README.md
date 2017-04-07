@@ -80,40 +80,43 @@ ROM is expected at the highest part of memory.
 <td>0008</td><td>64</td><td>BLKCTRL</td><td>BLKCTRL Reg</td><td> BLKCTRL Reg</td><td>BLKCTRL</td><td>BLKCTRL</td><td>13</td>
 </tr>
 <tr>
-<td>0009</td><td>64</td><td>ACC</td><td>ACC</td><td> ACC</td><td> ACC</td><td>ACC</td><td>14</td>
+<td>0009</td><td>64</td><td>ACC</td><td>ACC</td><td>ACC</td><td>ACC</td><td>ACC</td><td>14</td>
 </tr>
 <tr>
-<td>000A</td><td>64</td><td>AND</td><td>CF</td><td> TMP AND ACC=>ACC</td><td>CF</td><td>CF</td><td>15, 18</td>
+<td>000A</td><td>64</td><td>AND</td><td>CY</td><td>TMP AND ACC=>ACC</td><td>CY</td><td>CY</td><td>15, 18</td>
 </tr>
 <tr>
-<td>000B</td><td>64</td><td>OR</td><td>ZF</td><td> TMP OR ACC=>ACC</td><td>ZF</td><td>ZF</td><td>16, 18</td>
+<td>000B</td><td>64</td><td>OR</td><td>ZF</td><td>TMP OR ACC=>ACC</td><td>ZF</td><td>ZF</td><td>16, 18</td>
 </tr>
 <tr>
-<td>000C</td><td>64</td><td>XOR</td><td>BITCNT</td><td> TMP XOR ACC=>ACC</td><td>BITCNT</td><td>BITCNT</td><td>17, 18</td>
+<td>000C</td><td>64</td><td>XOR</td><td>BITCNT</td><td>TMP XOR ACC=>ACC</td><td>BITCNT</td><td>BITCNT</td><td>17, 18</td>
 </tr>
 <tr>
-<td>000D</td><td>64</td><td>ADD</td><td>BCRZ</td><td> TMP + ACC=>ACC</td><td>BCRZ</td><td>BCRZ</td><td>19</td>
+<td>000D</td><td>64</td><td>ADD</td><td>BCRZ</td><td>TMP + ACC=>ACC</td><td>BCRZ</td><td>BCRZ</td><td>19</td>
 </tr>
 <tr>
-<td>000E</td><td>64</td><td>ADC</td><td>BCRO</td><td> TMP + ACC + C=>ACC</td><td>BCRO</td><td>BCRO</td><td>20</td>
+<td>000E</td><td>64</td><td>ADC</td><td>BCRO</td><td>TMP + ACC + C=>ACC</td><td>BCRO</td><td>BCRO</td><td>20</td>
 </tr>
 <tr>
-<td>000F</td><td>64</td><td>SUB</td><td>BCLZ</td><td> ACC - TMP=>ACC</td><td>BCLZ</td><td>BCLZ</td><td>21</td>
+<td>000F</td><td>64</td><td>SUB</td><td>BCLZ</td><td>ACC - TMP=>ACC</td><td>BCLZ</td><td>BCLZ</td><td>21</td>
 </tr>
 <tr>
-<td>0010</td><td>64</td><td>SBB</td><td>BCLO</td><td> ACC - TMP - C=>ACC</td><td>BCLO</td><td>BCLO</td><td>22</td>
+<td>0010</td><td>64</td><td>SBB</td><td>BCLO</td><td>ACC - TMP - C=>ACC</td><td>BCLO</td><td>BCLO</td><td>22</td>
 </tr>
 <tr>
-<td>0011</td><td>64</td><td>C</td><td>C/NC Value</td><td>C Value</td><td> C Val</td><td>C Val</td><td>23 </td>
+<td>0011</td><td>64</td><td>CMP</td><td>TBD</td><td>adjust ZF and CY</td><td>TBD</td><td>TBD</td><td>54</td>
 </tr>
 <tr>
-<td>0012</td><td>64</td><td>NC</td><td> C/NC Value</td><td>NC Value</td><td>NC Val</td><td> NC Val</td><td>24 </td>
+<td>0012</td><td>64</td><td>C</td><td>C/NC Value</td><td>C Value</td><td> C Val</td><td>C Val</td><td>23 </td>
 </tr>
 <tr>
-<td>0013</td><td>64</td><td>Z</td><td>Z/NZ Value</td><td>Z Value</td><td> Z Val</td><td>Z Val</td><td>25</td>
+<td>0013</td><td>64</td><td>NC</td><td> C/NC Value</td><td>NC Value</td><td>NC Val</td><td> NC Val</td><td>24 </td>
 </tr>
 <tr>
-<td>0014</td><td>64</td><td>NZ</td><td> Z/NZ Value</td><td>NZ Value</td><td>NZ Val</td><td> NZ Val</td><td>26</td>
+<td>0014</td><td>64</td><td>Z</td><td>Z/NZ Value</td><td>Z Value</td><td> Z Val</td><td>Z Val</td><td>25</td>
+</tr>
+<tr>
+<td>0015</td><td>64</td><td>NZ</td><td> Z/NZ Value</td><td>NZ Value</td><td>NZ Val</td><td> NZ Val</td><td>26</td>
 </tr>
 <tr>
 <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
@@ -341,15 +344,15 @@ NOTES:
   - Bit 5 - 1 = decrement DAR, when Bit 4 and Bit 5 sre the same DAR is unchanged
   - Bit 6 - 1 = read only once, write using same data. Bits 2 and 3 are ignored. Typically used for block fill.
 14. Accumulator is affected by writes to this and the following 7 addresses.
-15. Write to AND causes data to be ANDed with ACC. Reading returns CF (Carry Flag).
+15. Write to AND causes data to be ANDed with ACC. Reading returns CY (Carry Flag).
 16. Write to OR causes data to be ORed with ACC. Reading returns ZF (Zero Flag).
 17. Write to XOR causes data to be XORed with ACC. Reading returns BITCNT (Count of set bits in ACC) from 0 to 64.
 18. Write clears Carry Flag. Zero Flag is set if all ACC bits are zero, cleared otherwise.
-19. Write to ADD adds data to ACC. CF and ZF are adjusted appropriately. BCRZ is bit count from right (LSB) to first zero.
-20. Write to ACD adds data and CF to ACC. CF and ZF are adjusted. BCRO is bit count from right to first 1 (0 to 64).
-21. Write to SUB subtracts data from ACC. CF and ZF are adjusted. BCLZ is bit count from left (MSB) to first zero.
-22. Write to SBB subtracts data and CF from ACC. CF and ZF are adjusted. BCLZ is bit count from left to first 1 bit.
-23. Write to C sets the value returned when reading either C or NC if CF is set when reading.
+19. Write to ADD adds data to ACC. CY and ZF are adjusted appropriately. BCRZ is bit count from right (LSB) to first zero.
+20. Write to ACD adds data and CF to ACC. CY and ZF are adjusted. BCRO is bit count from right to first 1 (0 to 64).
+21. Write to SUB subtracts data from ACC. CY and ZF are adjusted. BCLZ is bit count from left (MSB) to first zero.
+22. Write to SBB subtracts data and CF from ACC. CY and ZF are adjusted. BCLZ is bit count from left to first 1 bit.
+23. Write to C sets the value returned when reading either C or NC if CY is set when reading.
 24. Write to NC sets the value returned when reading either C or NC if CF is clear when reading.
 25. Write to Z sets the value returned when reading either Z or NZ if ZF is set when reading.
 26. Write to NZ sets the value returned when reading either Z or NZ if ZF is clear when reading.
@@ -381,3 +384,4 @@ NOTES:
 51. Unsigned Limit register similar to Lim1.
 52. Unsigned register similar to Und1.
 53. Unsigned register similar to Ovr1.
+54. CMP is compare. ZF and CY are adjusted as if value was subtracted from ACC. ACC is unchanged. TBD means To Be Determined.
