@@ -349,11 +349,11 @@ NOTES:
 17. Write to XOR causes data to be XORed with ACC. Reading returns BITCNT (Count of set bits in ACC) from 0 to 64.
 18. Write clears Carry Flag. Zero Flag is set if all ACC bits are zero, cleared otherwise.
 19. Write to ADD adds data to ACC. CY and ZF are adjusted appropriately. BCRZ is bit count from right (LSB) to first zero.
-20. Write to ACD adds data and CF to ACC. CY and ZF are adjusted. BCRO is bit count from right to first 1 (0 to 64).
+20. Write to ADC adds data and CY to ACC. CY and ZF are adjusted. BCRO is bit count from right to first 1 (0 to 64).
 21. Write to SUB subtracts data from ACC. CY and ZF are adjusted. BCLZ is bit count from left (MSB) to first zero.
-22. Write to SBB subtracts data and CF from ACC. CY and ZF are adjusted. BCLZ is bit count from left to first 1 bit.
+22. Write to SBB subtracts data and CY from ACC. CY and ZF are adjusted. BCLZ is bit count from left to first 1 bit.
 23. Write to C sets the value returned when reading either C or NC if CY is set when reading.
-24. Write to NC sets the value returned when reading either C or NC if CF is clear when reading.
+24. Write to NC sets the value returned when reading either C or NC if CY is clear when reading.
 25. Write to Z sets the value returned when reading either Z or NZ if ZF is set when reading.
 26. Write to NZ sets the value returned when reading either Z or NZ if ZF is clear when reading.
 27. Working Registers. These 16 registers do nothing special. They are just like RAM except they never generate wait states.
