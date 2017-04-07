@@ -74,10 +74,10 @@ ROM is expected at the highest part of memory.
 <td>0006</td><td>64</td><td>DMACR</td><td>DMA Ctrl Reg</td><td>DMA Ctrl Reg</td><td>DMACR</td><td>DMACR</td><td>11</td>
 </tr>
 <tr>
-<td>0007</td><td>64</td><td>BLKCNT</td><td> BLKCNT Reg</td><td>BLKCNT Reg</td><td>0</td><td>no effect</td><td>12</td>
+<td>0007</td><td>64</td><td>BLKCNT</td><td> BLKCNT Reg</td><td>BLKCNT Reg</td><td>BLKCNT</td><td>BLKCNT</td><td>12</td>
 </tr>
 <tr>
-<td>0008</td><td>64</td><td>BLKCTRL</td><td>BLKCTRL Reg</td><td> BLKCTRL Reg</td><td>0</td><td>no effect</td><td>13</td>
+<td>0008</td><td>64</td><td>BLKCTRL</td><td>BLKCTRL Reg</td><td> BLKCTRL Reg</td><td>BLKCTRL</td><td>BLKCTRL</td><td>13</td>
 </tr>
 <tr>
 <td>0009</td><td>64</td><td>ACC</td><td>ACC</td><td> ACC</td><td> ACC</td><td>ACC</td><td>14</td>
