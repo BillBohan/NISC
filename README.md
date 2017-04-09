@@ -107,19 +107,22 @@ ROM is expected at the highest part of memory.
 <td>0011</td><td>64</td><td>CMP</td><td>TBD</td><td>adjust ZF and CY</td><td>TBD</td><td>TBD</td><td>54</td>
 </tr>
 <tr>
-<td>0012</td><td>64</td><td>C</td><td>C/NC Value</td><td>C Value</td><td> C Val</td><td>C Val</td><td>23 </td>
+<td>0012</td><td>6</td><td>SWAP</td><td>TBD</td><td>ACC modified</td><td>TBD</td><td>no effect</td><td>55</td>
 </tr>
 <tr>
-<td>0013</td><td>64</td><td>NC</td><td> C/NC Value</td><td>NC Value</td><td>NC Val</td><td> NC Val</td><td>24 </td>
+<td>0013</td><td>64</td><td>C</td><td>C/NC Value</td><td>C Value</td><td> C Val</td><td>C Val</td><td>23 </td>
 </tr>
 <tr>
-<td>0014</td><td>64</td><td>Z</td><td>Z/NZ Value</td><td>Z Value</td><td> Z Val</td><td>Z Val</td><td>25</td>
+<td>0014</td><td>64</td><td>NC</td><td> C/NC Value</td><td>NC Value</td><td>NC Val</td><td> NC Val</td><td>24 </td>
 </tr>
 <tr>
-<td>0015</td><td>64</td><td>NZ</td><td> Z/NZ Value</td><td>NZ Value</td><td>NZ Val</td><td> NZ Val</td><td>26</td>
+<td>0015</td><td>64</td><td>Z</td><td>Z/NZ Value</td><td>Z Value</td><td> Z Val</td><td>Z Val</td><td>25</td>
 </tr>
 <tr>
-<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td>0016</td><td>64</td><td>NZ</td><td> Z/NZ Value</td><td>NZ Value</td><td>NZ Val</td><td> NZ Val</td><td>26</td>
+</tr>
+<tr>
+<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>29</td>
 </tr>
 <tr>
 <td>0030</td><td>64</td><td>WReg0</td><td>WReg0</td><td> WReg0</td><td> WReg0</td><td>WReg0</td><td>27</td>
@@ -382,3 +385,10 @@ NOTES:
 52. Unsigned register similar to Und1.
 53. Unsigned register similar to Ovr1.
 54. CMP is compare. ZF and CY are adjusted as if value was subtracted from ACC. ACC is unchanged. TBD means To Be Determined.
+55. Swaps parts of ACC
+  - Bit 0 swaps Bits within Pairs
+  - Bit 1 swaps Pairs within Nibbles
+  - Bit 2 swaps Nibbles within Bytes
+  - Bit 3 swaps Bytes within Quarter Words
+  - Bit 4 swaps Quarter Words within Half Words
+  - Bit 5 swaps Half Words within ACC
