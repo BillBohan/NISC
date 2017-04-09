@@ -104,10 +104,16 @@ ROM is expected at the highest part of memory.
 <td>0010</td><td>64</td><td>SBB</td><td>BCLO</td><td>ACC - TMP - C=>ACC</td><td>BCLO</td><td>BCLO</td><td>22</td>
 </tr>
 <tr>
-<td>0011</td><td>64</td><td>CMP</td><td>TBD</td><td>adjust ZF and CY</td><td>TBD</td><td>TBD</td><td>54</td>
+<td>0011</td><td>64</td><td>CMP</td><td>all 1s</td><td>adjust ZF and CY</td><td>all 1s</td><td>no effect</td><td>54</td>
 </tr>
 <tr>
 <td>0012</td><td>6</td><td>SWAP</td><td>TBD</td><td>ACC modified</td><td>TBD</td><td>no effect</td><td>55</td>
+</tr>
+<tr>
+<td>0013</td><td>64</td><td>ILVI</td><td>High ILV</td><td>Bit interleave</td><td>High ILV</td><td>load only</td><td>56</td>
+</tr>
+<tr>
+<td>0014</td><td>64</td><td>DLVI</td><td>High DLV</td><td>Bit deinterleave</td><td>High DLV</td><td>load only</td><td>57</td>
 </tr>
 <tr>
 <td>0013</td><td>64</td><td>C</td><td>C/NC Value</td><td>C Value</td><td> C Val</td><td>C Val</td><td>23 </td>
@@ -173,7 +179,7 @@ ROM is expected at the highest part of memory.
 <td>003F</td><td>64</td><td>WRegF</td><td>WRegF</td><td> WRegF</td><td> WRegF</td><td>WRegF</td><td>27</td>
 </tr>
 <tr>
-<td>0040<br>to<br>007F</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>28</td>
+<td>0040<br>to<br>007F</td><td>64</td><td>BRLS</td><td> </td><td> </td><td> </td><td> </td><td>28</td>
 </tr>
 <tr>
 <td>0080</td><td>64</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>46</td>
@@ -384,11 +390,13 @@ NOTES:
 51. Unsigned Limit register similar to Lim1.
 52. Unsigned register similar to Und1.
 53. Unsigned register similar to Ovr1.
-54. CMP is compare. ZF and CY are adjusted as if value was subtracted from ACC. ACC is unchanged. TBD means To Be Determined.
-55. Swaps parts of ACC
+54. CMP is compare. ZF and CY are adjusted as if value was subtracted from ACC. ACC is unchanged.
+55. Swaps parts of ACC. TBD means To Be Determined.
   - Bit 0 swaps Bits within Pairs
   - Bit 1 swaps Pairs within Nibbles
   - Bit 2 swaps Nibbles within Bytes
   - Bit 3 swaps Bytes within Quarter Words
   - Bit 4 swaps Quarter Words within Half Words
   - Bit 5 swaps Half Words within ACC
+56. Bits are interleaved with Bits of ACC. Low order bits are in ACC. High order bits are available here.
+57. Bits are deinterleaved with Bits of ACC. Odd bits in ACC. Even bits are available here.
