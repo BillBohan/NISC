@@ -122,154 +122,151 @@ ROM is expected at the highest part of memory.
 <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
 </tr>
 <tr>
-<td>0020</td><td>64</td><td>WReg0</td><td>WReg0</td><td> WReg0</td><td> WReg0</td><td>WReg0</td><td>27</td>
+<td>0030</td><td>64</td><td>WReg0</td><td>WReg0</td><td> WReg0</td><td> WReg0</td><td>WReg0</td><td>27</td>
 </tr>
 <tr>
-<td>0021</td><td>64</td><td>WReg1</td><td>WReg1</td><td> WReg1</td><td> WReg1</td><td>WReg1</td><td>27</td>
+<td>0031</td><td>64</td><td>WReg1</td><td>WReg1</td><td> WReg1</td><td> WReg1</td><td>WReg1</td><td>27</td>
 </tr>
 <tr>
-<td>0022</td><td>64</td><td>WReg2</td><td>WReg2</td><td> WReg2</td><td> WReg2</td><td>WReg2</td><td>27</td>
+<td>0032</td><td>64</td><td>WReg2</td><td>WReg2</td><td> WReg2</td><td> WReg2</td><td>WReg2</td><td>27</td>
 </tr>
 <tr>
-<td>0023</td><td>64</td><td>WReg3</td><td>WReg3</td><td> WReg3</td><td> WReg3</td><td>WReg3</td><td>27</td>
+<td>0033</td><td>64</td><td>WReg3</td><td>WReg3</td><td> WReg3</td><td> WReg3</td><td>WReg3</td><td>27</td>
 </tr>
 <tr>
-<td>0024</td><td>64</td><td>WReg4</td><td>WReg4</td><td> WReg4</td><td> WReg4</td><td>WReg4</td><td>27</td>
+<td>0034</td><td>64</td><td>WReg4</td><td>WReg4</td><td> WReg4</td><td> WReg4</td><td>WReg4</td><td>27</td>
 </tr>
 <tr>
-<td>0025</td><td>64</td><td>WReg5</td><td>WReg5</td><td> WReg5</td><td> WReg5</td><td>WReg5</td><td>27</td>
+<td>0035</td><td>64</td><td>WReg5</td><td>WReg5</td><td> WReg5</td><td> WReg5</td><td>WReg5</td><td>27</td>
 </tr>
 <tr>
-<td>0026</td><td>64</td><td>WReg6</td><td>WReg6</td><td> WReg6</td><td> WReg6</td><td>WReg6</td><td>27</td>
+<td>0036</td><td>64</td><td>WReg6</td><td>WReg6</td><td> WReg6</td><td> WReg6</td><td>WReg6</td><td>27</td>
 </tr>
 <tr>
-<td>0027</td><td>64</td><td>WReg7</td><td>WReg7</td><td> WReg7</td><td> WReg7</td><td>WReg7</td><td>27</td>
+<td>0037</td><td>64</td><td>WReg7</td><td>WReg7</td><td> WReg7</td><td> WReg7</td><td>WReg7</td><td>27</td>
 </tr>
 <tr>
-<td>0028</td><td>64</td><td>WReg8</td><td>WReg8</td><td> WReg8</td><td> WReg8</td><td>WReg8</td><td>27</td>
+<td>0038</td><td>64</td><td>WReg8</td><td>WReg8</td><td> WReg8</td><td> WReg8</td><td>WReg8</td><td>27</td>
 </tr>
 <tr>
-<td>0029</td><td>64</td><td>WReg9</td><td>WReg9</td><td> WReg9</td><td> WReg9</td><td>WReg9</td><td>27</td>
+<td>0039</td><td>64</td><td>WReg9</td><td>WReg9</td><td> WReg9</td><td> WReg9</td><td>WReg9</td><td>27</td>
 </tr>
 <tr>
-<td>002A</td><td>64</td><td>WRegA</td><td>WRegA</td><td> WRegA</td><td> WRegA</td><td>WRegA</td><td>27</td>
+<td>003A</td><td>64</td><td>WRegA</td><td>WRegA</td><td> WRegA</td><td> WRegA</td><td>WRegA</td><td>27</td>
 </tr>
 <tr>
-<td>002B</td><td>64</td><td>WRegB</td><td>WRegB</td><td> WRegB</td><td> WRegB</td><td>WRegB</td><td>27</td>
+<td>003B</td><td>64</td><td>WRegB</td><td>WRegB</td><td> WRegB</td><td> WRegB</td><td>WRegB</td><td>27</td>
 </tr>
 <tr>
-<td>002C</td><td>64</td><td>WRegC</td><td>WRegC</td><td> WRegC</td><td> WRegC</td><td>WRegC</td><td>27</td>
+<td>003C</td><td>64</td><td>WRegC</td><td>WRegC</td><td> WRegC</td><td> WRegC</td><td>WRegC</td><td>27</td>
 </tr>
 <tr>
-<td>002D</td><td>64</td><td>WRegD</td><td>WRegD</td><td> WRegD</td><td> WRegD</td><td>WRegD</td><td>27</td>
+<td>003D</td><td>64</td><td>WRegD</td><td>WRegD</td><td> WRegD</td><td> WRegD</td><td>WRegD</td><td>27</td>
 </tr>
 <tr>
-<td>002E</td><td>64</td><td>WRegE</td><td>WRegE</td><td> WRegE</td><td> WRegE</td><td>WRegE</td><td>27</td>
+<td>003E</td><td>64</td><td>WRegE</td><td>WRegE</td><td> WRegE</td><td> WRegE</td><td>WRegE</td><td>27</td>
 </tr>
 <tr>
-<td>002F</td><td>64</td><td>WRegF</td><td>WRegF</td><td> WRegF</td><td> WRegF</td><td>WRegF</td><td>27</td>
+<td>003F</td><td>64</td><td>WRegF</td><td>WRegF</td><td> WRegF</td><td> WRegF</td><td>WRegF</td><td>27</td>
 </tr>
 <tr>
-<td>0030<br>to<br>006F</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>28</td>
+<td>0040<br>to<br>007F</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>28</td>
 </tr>
 <tr>
-<td>0070</td><td>64</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>46</td>
+<td>0080</td><td>64</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>46</td>
 </tr>
 <tr>
-<td>0071</td><td>64</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>47</td>
+<td>0081</td><td>64</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>47</td>
 </tr>
 <tr>
-<td>0072</td><td>64</td><td>Und1</td><td>Und1<br>or<br>Ovr1</td><td>Und1</td><td>Und1</td><td>Und1</td><td>48</td>
+<td>0082</td><td>64</td><td>Und1</td><td>Und1<br>or<br>Ovr1</td><td>Und1</td><td>Und1</td><td>Und1</td><td>48</td>
 </tr>
 <tr>
-<td>0073</td><td>64</td><td>Ovr1</td><td>Und1<br>or<br>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>49</td>
+<td>0083</td><td>64</td><td>Ovr1</td><td>Und1<br>or<br>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>49</td>
 </tr>
 <tr>
-<td>0074</td><td>64</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>50</td>
+<td>0084</td><td>64</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>50</td>
 </tr>
 <tr>
-<td>0075</td><td>64</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>51</td>
+<td>0085</td><td>64</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>51</td>
 </tr>
 <tr>
-<td>0076</td><td>64</td><td>Und2</td><td>Und2<br>or<br>Ovr2</td><td>Und2</td><td>Und2</td><td>Und2</td><td>52</td>
+<td>0086</td><td>64</td><td>Und2</td><td>Und2<br>or<br>Ovr2</td><td>Und2</td><td>Und2</td><td>Und2</td><td>52</td>
 </tr>
 <tr>
-<td>0077</td><td>64</td><td>Ovr2</td><td>Und2<br>or<br>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>53</td>
+<td>0087</td><td>64</td><td>Ovr2</td><td>Und2<br>or<br>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>53</td>
 </tr>
 <tr>
-<td>0078</td><td>64</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>50</td>
+<td>0088</td><td>64</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>50</td>
 </tr>
 <tr>
-<td>0079</td><td>64</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>51</td>
+<td>0089</td><td>64</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>51</td>
 </tr>
 <tr>
-<td>007A</td><td>64</td><td>Und3</td><td>Und3<br>or<br>Ovr3</td><td>Und3</td><td>Und3</td><td>Und3</td><td>52</td>
+<td>008A</td><td>64</td><td>Und3</td><td>Und3<br>or<br>Ovr3</td><td>Und3</td><td>Und3</td><td>Und3</td><td>52</td>
 </tr>
 <tr>
-<td>007B</td><td>64</td><td>Ovr3</td><td>Und3<br>or<br>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>53</td>
+<td>008B</td><td>64</td><td>Ovr3</td><td>Und3<br>or<br>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>53</td>
 </tr>
 <tr>
-<td>007C</td><td>64</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>50</td>
+<td>008C</td><td>64</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>50</td>
 </tr>
 <tr>
-<td>007D</td><td>64</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>51</td>
+<td>008D</td><td>64</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>51</td>
 </tr>
 <tr>
-<td>007E</td><td>64</td><td>Und4</td><td>Und4<br>or<br>Ovr4</td><td>Und4</td><td>Und4</td><td>Und4</td><td>52</td>
+<td>008E</td><td>64</td><td>Und4</td><td>Und4<br>or<br>Ovr4</td><td>Und4</td><td>Und4</td><td>Und4</td><td>52</td>
 </tr>
 <tr>
-<td>007F</td><td>64</td><td>Ovr4</td><td>Und4<br>or<br>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>53</td>
+<td>008F</td><td>64</td><td>Ovr4</td><td>Und4<br>or<br>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>53</td>
 </tr>
 <tr>
-<td>0080</td><td>64</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>50</td>
+<td>0090</td><td>64</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>50</td>
 </tr>
 <tr>
-<td>0081</td><td>64</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>51</td>
+<td>0091</td><td>64</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>51</td>
 </tr>
 <tr>
-<td>0082</td><td>64</td><td>Und5</td><td>Und5<br>or<br>Ovr5</td><td>Und5</td><td>Und5</td><td>Und5</td><td>52</td>
+<td>0092</td><td>64</td><td>Und5</td><td>Und5<br>or<br>Ovr5</td><td>Und5</td><td>Und5</td><td>Und5</td><td>52</td>
 </tr>
 <tr>
-<td>0083</td><td>64</td><td>Ovr5</td><td>Und5<br>or<br>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>53</td>
+<td>0093</td><td>64</td><td>Ovr5</td><td>Und5<br>or<br>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>53</td>
 </tr>
 <tr>
-<td>0084</td><td>64</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>50</td>
+<td>0094</td><td>64</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>50</td>
 </tr>
 <tr>
-<td>0085</td><td>64</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>51</td>
+<td>0095</td><td>64</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>51</td>
 </tr>
 <tr>
-<td>0086</td><td>64</td><td>Und6</td><td>Und6<br>or<br>Ovr6</td><td>Und6</td><td>Und6</td><td>Und6</td><td>52</td>
+<td>0096</td><td>64</td><td>Und6</td><td>Und6<br>or<br>Ovr6</td><td>Und6</td><td>Und6</td><td>Und6</td><td>52</td>
 </tr>
 <tr>
-<td>0087</td><td>64</td><td>Ovr6</td><td>Und6<br>or<br>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>53</td>
+<td>0097</td><td>64</td><td>Ovr6</td><td>Und6<br>or<br>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>53</td>
 </tr>
 <tr>
-<td>0088</td><td>64</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>50</td>
+<td>0098</td><td>64</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>50</td>
 </tr>
 <tr>
-<td>0089</td><td>64</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>51</td>
+<td>0099</td><td>64</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>51</td>
 </tr>
 <tr>
-<td>008A</td><td>64</td><td>Und7</td><td>Und7<br>or<br>Ovr7</td><td>Und7</td><td>Und7</td><td>Und7</td><td>52</td>
+<td>009A</td><td>64</td><td>Und7</td><td>Und7<br>or<br>Ovr7</td><td>Und7</td><td>Und7</td><td>Und7</td><td>52</td>
 </tr>
 <tr>
-<td>008B</td><td>64</td><td>Ovr7</td><td>Und7<br>or<br>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>53</td>
+<td>009B</td><td>64</td><td>Ovr7</td><td>Und7<br>or<br>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>53</td>
 </tr>
 <tr>
-<td>008C</td><td>64</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>50</td>
+<td>009C</td><td>64</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>50</td>
 </tr>
 <tr>
-<td>008D</td><td>64</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>51</td>
+<td>009D</td><td>64</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>51</td>
 </tr>
 <tr>
-<td>008E</td><td>64</td><td>Und8</td><td>Und8<br>or<br>Ovr8</td><td>Und8</td><td>Und8</td><td>Und8</td><td>52</td>
+<td>009E</td><td>64</td><td>Und8</td><td>Und8<br>or<br>Ovr8</td><td>Und8</td><td>Und8</td><td>Und8</td><td>52</td>
 </tr>
 <tr>
-<td>008F</td><td>64</td><td>Ovr8</td><td>Und8<br>or<br>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>53</td>
-</tr>
-<tr>
-<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>29</td>
+<td>009F</td><td>64</td><td>Ovr8</td><td>Und8<br>or<br>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>53</td>
 </tr>
 <tr>
 <td>00Ax</td><td>64</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>30, 31</td>
