@@ -149,214 +149,220 @@ ROM is expected at the highest part of memory.
 <td>001F</td><td>64</td><td>DLVH</td><td>High DLVH</td><td>Half deinterleave</td><td>High DLVH</td><td>load only</td><td>37</td>
 </tr>
 <tr>
-<td>0020</td><td>64</td><td>C</td><td>C/NC Value</td><td>C Value</td><td> C Val</td><td>C Val</td><td>38</td>
+<td>0020</td><td>64</td><td>CV</td><td>CV/NC Value</td><td>CV Value</td><td> CV Value</td><td>CV Value</td><td>38</td>
 </tr>
 <tr>
-<td>0021</td><td>64</td><td>NC</td><td> C/NC Value</td><td>NC Value</td><td>NC Val</td><td> NC Val</td><td>39</td>
+<td>0021</td><td>64</td><td>NC</td><td>CV/NC Value</td><td>NC Value</td><td>NC Value</td><td>NC Value</td><td>39</td>
 </tr>
 <tr>
-<td>0022</td><td>64</td><td>Z</td><td>Z/NZ Value</td><td>Z Value</td><td> Z Val</td><td>Z Val</td><td>40</td>
+<td>0022</td><td>64</td><td>ZV</td><td>ZV/NZ Value</td><td>ZV Value</td><td> ZV Value</td><td>ZV Value</td><td>40</td>
 </tr>
 <tr>
-<td>0023</td><td>64</td><td>NZ</td><td> Z/NZ Value</td><td>NZ Value</td><td>NZ Val</td><td> NZ Val</td><td>41</td>
+<td>0023</td><td>64</td><td>NZ</td><td>ZV/NZ Value</td><td>NZ Value</td><td>NZ Value</td><td>NZ Value</td><td>41</td>
 </tr>
 <tr>
-<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>42</td>
+<td>0024</td><td>64</td><td>PO</td><td>PO/PE Value</td><td>PO Value</td><td> PO Value</td><td>PO Value</td><td>42</td>
 </tr>
 <tr>
-<td>0030</td><td>64</td><td>WReg0</td><td>WReg0</td><td> WReg0</td><td> WReg0</td><td>WReg0</td><td>43</td>
+<td>0025</td><td>64</td><td>PE</td><td>PO/PE Value</td><td>PE Value</td><td>PE Value</td><td>PE Value</td><td>43</td>
 </tr>
 <tr>
-<td>0031</td><td>64</td><td>WReg1</td><td>WReg1</td><td> WReg1</td><td> WReg1</td><td>WReg1</td><td>43</td>
+<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>44</td>
 </tr>
 <tr>
-<td>0032</td><td>64</td><td>WReg2</td><td>WReg2</td><td> WReg2</td><td> WReg2</td><td>WReg2</td><td>43</td>
+<td>0030</td><td>64</td><td>WReg0</td><td>WReg0</td><td> WReg0</td><td> WReg0</td><td>WReg0</td><td>45</td>
 </tr>
 <tr>
-<td>0033</td><td>64</td><td>WReg3</td><td>WReg3</td><td> WReg3</td><td> WReg3</td><td>WReg3</td><td>43</td>
+<td>0031</td><td>64</td><td>WReg1</td><td>WReg1</td><td> WReg1</td><td> WReg1</td><td>WReg1</td><td>45</td>
 </tr>
 <tr>
-<td>0034</td><td>64</td><td>WReg4</td><td>WReg4</td><td> WReg4</td><td> WReg4</td><td>WReg4</td><td>43</td>
+<td>0032</td><td>64</td><td>WReg2</td><td>WReg2</td><td> WReg2</td><td> WReg2</td><td>WReg2</td><td>45</td>
 </tr>
 <tr>
-<td>0035</td><td>64</td><td>WReg5</td><td>WReg5</td><td> WReg5</td><td> WReg5</td><td>WReg5</td><td>43</td>
+<td>0033</td><td>64</td><td>WReg3</td><td>WReg3</td><td> WReg3</td><td> WReg3</td><td>WReg3</td><td>45</td>
 </tr>
 <tr>
-<td>0036</td><td>64</td><td>WReg6</td><td>WReg6</td><td> WReg6</td><td> WReg6</td><td>WReg6</td><td>43</td>
+<td>0034</td><td>64</td><td>WReg4</td><td>WReg4</td><td> WReg4</td><td> WReg4</td><td>WReg4</td><td>45</td>
 </tr>
 <tr>
-<td>0037</td><td>64</td><td>WReg7</td><td>WReg7</td><td> WReg7</td><td> WReg7</td><td>WReg7</td><td>43</td>
+<td>0035</td><td>64</td><td>WReg5</td><td>WReg5</td><td> WReg5</td><td> WReg5</td><td>WReg5</td><td>45</td>
 </tr>
 <tr>
-<td>0038</td><td>64</td><td>WReg8</td><td>WReg8</td><td> WReg8</td><td> WReg8</td><td>WReg8</td><td>43</td>
+<td>0036</td><td>64</td><td>WReg6</td><td>WReg6</td><td> WReg6</td><td> WReg6</td><td>WReg6</td><td>45</td>
 </tr>
 <tr>
-<td>0039</td><td>64</td><td>WReg9</td><td>WReg9</td><td> WReg9</td><td> WReg9</td><td>WReg9</td><td>43</td>
+<td>0037</td><td>64</td><td>WReg7</td><td>WReg7</td><td> WReg7</td><td> WReg7</td><td>WReg7</td><td>45</td>
 </tr>
 <tr>
-<td>003A</td><td>64</td><td>WRegA</td><td>WRegA</td><td> WRegA</td><td> WRegA</td><td>WRegA</td><td>43</td>
+<td>0038</td><td>64</td><td>WReg8</td><td>WReg8</td><td> WReg8</td><td> WReg8</td><td>WReg8</td><td>45</td>
 </tr>
 <tr>
-<td>003B</td><td>64</td><td>WRegB</td><td>WRegB</td><td> WRegB</td><td> WRegB</td><td>WRegB</td><td>43</td>
+<td>0039</td><td>64</td><td>WReg9</td><td>WReg9</td><td> WReg9</td><td> WReg9</td><td>WReg9</td><td>45</td>
 </tr>
 <tr>
-<td>003C</td><td>64</td><td>WRegC</td><td>WRegC</td><td> WRegC</td><td> WRegC</td><td>WRegC</td><td>43</td>
+<td>003A</td><td>64</td><td>WRegA</td><td>WRegA</td><td> WRegA</td><td> WRegA</td><td>WRegA</td><td>45</td>
 </tr>
 <tr>
-<td>003D</td><td>64</td><td>WRegD</td><td>WRegD</td><td> WRegD</td><td> WRegD</td><td>WRegD</td><td>43</td>
+<td>003B</td><td>64</td><td>WRegB</td><td>WRegB</td><td> WRegB</td><td> WRegB</td><td>WRegB</td><td>45</td>
 </tr>
 <tr>
-<td>003E</td><td>64</td><td>WRegE</td><td>WRegE</td><td> WRegE</td><td> WRegE</td><td>WRegE</td><td>43</td>
+<td>003C</td><td>64</td><td>WRegC</td><td>WRegC</td><td> WRegC</td><td> WRegC</td><td>WRegC</td><td>45</td>
 </tr>
 <tr>
-<td>003F</td><td>64</td><td>WRegF</td><td>WRegF</td><td> WRegF</td><td> WRegF</td><td>WRegF</td><td>43</td>
+<td>003D</td><td>64</td><td>WRegD</td><td>WRegD</td><td> WRegD</td><td> WRegD</td><td>WRegD</td><td>45</td>
 </tr>
 <tr>
-<td>0040<br>to<br>007F</td><td>64</td><td>BRLS</td><td> </td><td> </td><td> </td><td> </td><td>44</td>
+<td>003E</td><td>64</td><td>WRegE</td><td>WRegE</td><td> WRegE</td><td> WRegE</td><td>WRegE</td><td>45</td>
 </tr>
 <tr>
-<td>0080</td><td>64</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>45</td>
+<td>003F</td><td>64</td><td>WRegF</td><td>WRegF</td><td> WRegF</td><td> WRegF</td><td>WRegF</td><td>45</td>
 </tr>
 <tr>
-<td>0081</td><td>64</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>46</td>
+<td>0040<br>to<br>007F</td><td>64</td><td>BRLS</td><td> </td><td> </td><td> </td><td> </td><td>46</td>
 </tr>
 <tr>
-<td>0082</td><td>64</td><td>Und1</td><td>Und1<br>or<br>Ovr1</td><td>Und1</td><td>Und1</td><td>Und1</td><td>47</td>
+<td>0080</td><td>64</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>Cnt1</td><td>47</td>
 </tr>
 <tr>
-<td>0083</td><td>64</td><td>Ovr1</td><td>Und1<br>or<br>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>48</td>
+<td>0081</td><td>64</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>Lim1</td><td>48</td>
 </tr>
 <tr>
-<td>0084</td><td>64</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>49</td>
+<td>0082</td><td>64</td><td>Und1</td><td>Und1<br>or<br>Ovr1</td><td>Und1</td><td>Und1</td><td>Und1</td><td>49</td>
 </tr>
 <tr>
-<td>0085</td><td>64</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>50</td>
+<td>0083</td><td>64</td><td>Ovr1</td><td>Und1<br>or<br>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>Ovr1</td><td>50</td>
 </tr>
 <tr>
-<td>0086</td><td>64</td><td>Und2</td><td>Und2<br>or<br>Ovr2</td><td>Und2</td><td>Und2</td><td>Und2</td><td>51</td>
+<td>0084</td><td>64</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>Cnt2</td><td>51</td>
 </tr>
 <tr>
-<td>0087</td><td>64</td><td>Ovr2</td><td>Und2<br>or<br>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>52</td>
+<td>0085</td><td>64</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>Lim2</td><td>52</td>
 </tr>
 <tr>
-<td>0088</td><td>64</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>49</td>
+<td>0086</td><td>64</td><td>Und2</td><td>Und2<br>or<br>Ovr2</td><td>Und2</td><td>Und2</td><td>Und2</td><td>53</td>
 </tr>
 <tr>
-<td>0089</td><td>64</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>50</td>
+<td>0087</td><td>64</td><td>Ovr2</td><td>Und2<br>or<br>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>Ovr2</td><td>54</td>
 </tr>
 <tr>
-<td>008A</td><td>64</td><td>Und3</td><td>Und3<br>or<br>Ovr3</td><td>Und3</td><td>Und3</td><td>Und3</td><td>51</td>
+<td>0088</td><td>64</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>Cnt3</td><td>51</td>
 </tr>
 <tr>
-<td>008B</td><td>64</td><td>Ovr3</td><td>Und3<br>or<br>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>52</td>
+<td>0089</td><td>64</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>Lim3</td><td>52</td>
 </tr>
 <tr>
-<td>008C</td><td>64</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>49</td>
+<td>008A</td><td>64</td><td>Und3</td><td>Und3<br>or<br>Ovr3</td><td>Und3</td><td>Und3</td><td>Und3</td><td>53</td>
 </tr>
 <tr>
-<td>008D</td><td>64</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>50</td>
+<td>008B</td><td>64</td><td>Ovr3</td><td>Und3<br>or<br>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>Ovr3</td><td>54</td>
 </tr>
 <tr>
-<td>008E</td><td>64</td><td>Und4</td><td>Und4<br>or<br>Ovr4</td><td>Und4</td><td>Und4</td><td>Und4</td><td>51</td>
+<td>008C</td><td>64</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>Cnt4</td><td>51</td>
 </tr>
 <tr>
-<td>008F</td><td>64</td><td>Ovr4</td><td>Und4<br>or<br>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>52</td>
+<td>008D</td><td>64</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>Lim4</td><td>52</td>
 </tr>
 <tr>
-<td>0090</td><td>64</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>49</td>
+<td>008E</td><td>64</td><td>Und4</td><td>Und4<br>or<br>Ovr4</td><td>Und4</td><td>Und4</td><td>Und4</td><td>53</td>
 </tr>
 <tr>
-<td>0091</td><td>64</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>50</td>
+<td>008F</td><td>64</td><td>Ovr4</td><td>Und4<br>or<br>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>Ovr4</td><td>54</td>
 </tr>
 <tr>
-<td>0092</td><td>64</td><td>Und5</td><td>Und5<br>or<br>Ovr5</td><td>Und5</td><td>Und5</td><td>Und5</td><td>51</td>
+<td>0090</td><td>64</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>Cnt5</td><td>51</td>
 </tr>
 <tr>
-<td>0093</td><td>64</td><td>Ovr5</td><td>Und5<br>or<br>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>52</td>
+<td>0091</td><td>64</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>Lim5</td><td>52</td>
 </tr>
 <tr>
-<td>0094</td><td>64</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>49</td>
+<td>0092</td><td>64</td><td>Und5</td><td>Und5<br>or<br>Ovr5</td><td>Und5</td><td>Und5</td><td>Und5</td><td>53</td>
 </tr>
 <tr>
-<td>0095</td><td>64</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>50</td>
+<td>0093</td><td>64</td><td>Ovr5</td><td>Und5<br>or<br>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>Ovr5</td><td>54</td>
 </tr>
 <tr>
-<td>0096</td><td>64</td><td>Und6</td><td>Und6<br>or<br>Ovr6</td><td>Und6</td><td>Und6</td><td>Und6</td><td>51</td>
+<td>0094</td><td>64</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>Cnt6</td><td>51</td>
 </tr>
 <tr>
-<td>0097</td><td>64</td><td>Ovr6</td><td>Und6<br>or<br>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>52</td>
+<td>0095</td><td>64</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>Lim6</td><td>52</td>
 </tr>
 <tr>
-<td>0098</td><td>64</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>49</td>
+<td>0096</td><td>64</td><td>Und6</td><td>Und6<br>or<br>Ovr6</td><td>Und6</td><td>Und6</td><td>Und6</td><td>53</td>
 </tr>
 <tr>
-<td>0099</td><td>64</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>50</td>
+<td>0097</td><td>64</td><td>Ovr6</td><td>Und6<br>or<br>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>Ovr6</td><td>54</td>
 </tr>
 <tr>
-<td>009A</td><td>64</td><td>Und7</td><td>Und7<br>or<br>Ovr7</td><td>Und7</td><td>Und7</td><td>Und7</td><td>51</td>
+<td>0098</td><td>64</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>Cnt7</td><td>51</td>
 </tr>
 <tr>
-<td>009B</td><td>64</td><td>Ovr7</td><td>Und7<br>or<br>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>52</td>
+<td>0099</td><td>64</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>Lim7</td><td>52</td>
 </tr>
 <tr>
-<td>009C</td><td>64</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>49</td>
+<td>009A</td><td>64</td><td>Und7</td><td>Und7<br>or<br>Ovr7</td><td>Und7</td><td>Und7</td><td>Und7</td><td>53</td>
 </tr>
 <tr>
-<td>009D</td><td>64</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>50</td>
+<td>009B</td><td>64</td><td>Ovr7</td><td>Und7<br>or<br>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>Ovr7</td><td>54</td>
 </tr>
 <tr>
-<td>009E</td><td>64</td><td>Und8</td><td>Und8<br>or<br>Ovr8</td><td>Und8</td><td>Und8</td><td>Und8</td><td>51</td>
+<td>009C</td><td>64</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>Cnt8</td><td>51</td>
 </tr>
 <tr>
-<td>009F</td><td>64</td><td>Ovr8</td><td>Und8<br>or<br>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>52</td>
+<td>009D</td><td>64</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>Lim8</td><td>52</td>
 </tr>
 <tr>
-<td>00Ax</td><td>64</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>53, 54</td>
+<td>009E</td><td>64</td><td>Und8</td><td>Und8<br>or<br>Ovr8</td><td>Und8</td><td>Und8</td><td>Und8</td><td>53</td>
 </tr>
 <tr>
-<td>00Bx</td><td>64</td><td>RegBx</td><td>(RegAx)</td><td>(RegAx)</td><td>RegAx</td><td>no effect</td><td>53, 55</td>
+<td>009F</td><td>64</td><td>Ovr8</td><td>Und8<br>or<br>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>Ovr8</td><td>54</td>
 </tr>
 <tr>
-<td>00Cx</td><td>64</td><td>RegCx</td><td>(RegAx--)</td><td>(++RegAx)</td><td>RegAx</td><td>no effect</td><td>53, 56</td>
+<td>00Ax</td><td>64</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>RegAx</td><td>55, 56</td>
 </tr>
 <tr>
-<td>00Dx</td><td>64</td><td>RegDx</td><td>(--RegAx)</td><td>(RegAx++)</td><td>RegAx</td><td>no effect</td><td>53, 57</td>
+<td>00Bx</td><td>64</td><td>RegBx</td><td>(RegAx)</td><td>(RegAx)</td><td>RegAx</td><td>no effect</td><td>55, 57</td>
 </tr>
 <tr>
-<td>00Ex</td><td>64</td><td>RegEx</td><td>(RegAx++)</td><td>(--RegAx)</td><td>RegAx</td><td>no effect</td><td>53, 58</td>
+<td>00Cx</td><td>64</td><td>RegCx</td><td>(RegAx--)</td><td>(++RegAx)</td><td>RegAx</td><td>no effect</td><td>55, 58</td>
 </tr>
 <tr>
-<td>00Fx</td><td>64</td><td>RegFx</td><td>(++RegAx)</td><td> (RegAx--)</td><td> RegAx</td><td>no effect</td><td>53, 59</td>
+<td>00Dx</td><td>64</td><td>RegDx</td><td>(--RegAx)</td><td>(RegAx++)</td><td>RegAx</td><td>no effect</td><td>55, 59</td>
 </tr>
 <tr>
-<td>0100</td><td>64</td><td>CHOP</td><td> CHOP</td><td>CHOP</td><td>CHOP</td><td> CHOP</td><td>60</td>
+<td>00Ex</td><td>64</td><td>RegEx</td><td>(RegAx++)</td><td>(--RegAx)</td><td>RegAx</td><td>no effect</td><td>55, 60</td>
 </tr>
 <tr>
-<td>0101</td><td>64</td><td>CHOPI</td><td>(CHOP)</td><td>(CHOP)</td><td>0</td><td>no effect</td><td>61</td>
+<td>00Fx</td><td>64</td><td>RegFx</td><td>(++RegAx)</td><td> (RegAx--)</td><td> RegAx</td><td>no effect</td><td>55, 61</td>
 </tr>
 <tr>
-<td>0102<br>0103</td><td>32</td><td>CHOPLH<br>CHOPHH</td><td>CHOP(31 downto 0)<br>CHOP(63 downto 32)</td><td>CHOP(31 downto 0)<br>CHOP(63 downto 32)</td><td>0</td><td>no effect</td><td>62</td>
+<td>0100</td><td>64</td><td>CHOP</td><td> CHOP</td><td>CHOP</td><td>CHOP</td><td> CHOP</td><td>62</td>
 </tr>
 <tr>
-<td>0104<br>0105<br>0106<br>0107</td><td>16</td><td>CHOPQ0<br>CHOPQ1<br>CHOPQ2<br>CHOPQ3</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>0</td><td>no effect</td><td>63</td>
+<td>0101</td><td>64</td><td>CHOPI</td><td>(CHOP)</td><td>(CHOP)</td><td>0</td><td>no effect</td><td>63</td>
 </tr>
 <tr>
-<td>0108<br>to<br>010F</td><td>8</td><td>CHOPB0<br>to<br>CHOPB7</td><td>CHOP(7 downto 0)<br>to<br>CHOP(63 downto 56)</td><td>CHOP(7 downto 0)<br>to<br>CHOP(63 downto 56)</td><td>0</td><td>no effect</td><td>64</td>
+<td>0102<br>0103</td><td>32</td><td>CHOPLH<br>CHOPHH</td><td>CHOP(31 downto 0)<br>CHOP(63 downto 32)</td><td>CHOP(31 downto 0)<br>CHOP(63 downto 32)</td><td>0</td><td>no effect</td><td>64</td>
 </tr>
 <tr>
-<td>0110<br>to<br>011F</td><td>4</td><td>CHOPN0<br>to<br>CHOPN15</td><td>CHOP(3 downto 0)<br>to<br>CHOP(63 downto 60)</td><td>CHOP(3 downto 0)<br>to<br>CHOP(63 downto 60)</td><td>0</td><td>no effect</td><td>65</td>
+<td>0104<br>0105<br>0106<br>0107</td><td>16</td><td>CHOPQ0<br>CHOPQ1<br>CHOPQ2<br>CHOPQ3</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>CHOP(15 downto 0)<br>CHOP(31 downto 16)<br>CHOP(47 downto 32)<br>CHOP(63 downto 48)</td><td>0</td><td>no effect</td><td>65</td>
 </tr>
 <tr>
-<td>0120<br>to<br>013F</td><td>2</td><td>CHOPP0<br>to<br>CHOPP31</td><td>CHOP(1 downto 0)<br>to<br>CHOP(63 downto 62)</td><td>CHOP(1 downto 0)<br>to<br>CHOP(63 downto 62)</td><td>0</td><td>no effect</td><td>66</td>
+<td>0108<br>to<br>010F</td><td>8</td><td>CHOPB0<br>to<br>CHOPB7</td><td>CHOP(7 downto 0)<br>to<br>CHOP(63 downto 56)</td><td>CHOP(7 downto 0)<br>to<br>CHOP(63 downto 56)</td><td>0</td><td>no effect</td><td>66</td>
 </tr>
 <tr>
-<td>0140<br>to<br>017F</td><td>1</td><td>CHOPB0<br>to<br>CHOPB63</td><td>CHOP(0)<br>to<br>CHOP(63)</td><td>CHOP(0)<br>to<br>CHOP(63)</td><td>0</td><td>no effect</td><td>67</td>
+<td>0110<br>to<br>011F</td><td>4</td><td>CHOPN0<br>to<br>CHOPN15</td><td>CHOP(3 downto 0)<br>to<br>CHOP(63 downto 60)</td><td>CHOP(3 downto 0)<br>to<br>CHOP(63 downto 60)</td><td>0</td><td>no effect</td><td>67</td>
 </tr>
 <tr>
-<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>42</td>
+<td>0120<br>to<br>013F</td><td>2</td><td>CHOPP0<br>to<br>CHOPP31</td><td>CHOP(1 downto 0)<br>to<br>CHOP(63 downto 62)</td><td>CHOP(1 downto 0)<br>to<br>CHOP(63 downto 62)</td><td>0</td><td>no effect</td><td>68</td>
 </tr>
 <tr>
-<td>10000<br>to<br>1FFFF</td><td>64</td><td>CONST</td><td>0000<br>to<br>FFFF</td><td>no effect</td><td>0000<br>to<br>FFFF</td><td>no effect</td><td>68</td>
+<td>0140<br>to<br>017F</td><td>1</td><td>CHOPB0<br>to<br>CHOPB63</td><td>CHOP(0)<br>to<br>CHOP(63)</td><td>CHOP(0)<br>to<br>CHOP(63)</td><td>0</td><td>no effect</td><td>69</td>
+</tr>
+<tr>
+<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>44</td>
+</tr>
+<tr>
+<td>10000<br>to<br>1FFFF</td><td>64</td><td>CONST</td><td>0000<br>to<br>FFFF</td><td>no effect</td><td>0000<br>to<br>FFFF</td><td>no effect</td><td>70</td>
 </tr>
 </table>
 
@@ -412,35 +418,37 @@ NOTES:
 35. Quarter Words are deinterleaved with ACC. Odd Quarters in ACC. Even Quarters are available here.
 36. Half Words are interleaved with ACC. Low Halves are in ACC. High Halves are available here.
 37. Half Words are deinterleaved with ACC. Odd Halves in ACC. Even Halves are available here.
-38. Write to C sets the value returned when reading either C or NC if CY is set when reading.
-39. Write to NC sets the value returned when reading either C or NC if CY is clear when reading.
-40. Write to Z sets the value returned when reading either Z or NZ if ZF is set when reading.
-41. Write to NZ sets the value returned when reading either Z or NZ if ZF is clear when reading.
-42. Space for more stuff.
-43. Working Registers. These 16 registers do nothing special. They are just like RAM except they never generate wait states.
-44. Barrel Rotate. There is only one register here. All addresses in this range read and write to it rotated relative to their addresses. Write to 30 and read from 31 rotates one bit to the right. Write to 38 and read from 30 rotates 8 bits to the left.
-45. Unsigned counter which counts down when Und1 is read and counts up when Ovr1 is read.
-46. Unsigned Limit register against which Cnt1 is compared.
-47. Unsigned register which returns Und1 if Cnt1 =< Lim1 else returns Ovr1. Reading decrements Cnt1. DMA Rd does not affect Cnt1.
-48. Unsigned register which returns Ovr1 if Cnt1 >= Lim1 else returns Und1. Reading increments Cnt1. DMA Rd does not affect Cnt1.
-49. Unsigned counter similar to Cnt1.
-50. Unsigned Limit register similar to Lim1.
-51. Unsigned register similar to Und1.
-52. Unsigned register similar to Ovr1.
-53. x here means all values from 0 to F.
-54. There are sixteen registers.
-55. These addresses use the Ax registers as memory pointers for read and write.
-56. These addresses use the Ax registers as stack pointers. Postdecremented read, Preincremented write.
-57. These addresses use the Ax registers as stack pointers. Predecremented read, Postincremented write.
-58. These addresses use the Ax registers as stack pointers. Postincremented read, Predecremented write.
-59. These addresses use the Ax registers as stack pointers. Preincremented read, Postdecremented write.
+38. Write to CV sets the value returned when reading either CV or NC if CY is set when reading.
+39. Write to NC sets the value returned when reading either CV or NC if CY is clear when reading.
+40. Write to ZV sets the value returned when reading either ZV or NZ if ZF is set when reading.
+41. Write to NZ sets the value returned when reading either ZV or NZ if ZF is clear when reading.
+42. Write to PO sets the value returned when reading either PO or PE if BITCNT(0) is set when reading. Parity odd.
+43. Write to PE sets the value returned when reading either PO or PE if BITCNT(0) is clear when reading. Parity even.
+44. Space for more stuff.
+45. Working Registers. These 16 registers do nothing special. They are just like RAM except they never generate wait states.
+46. Barrel Rotate. There is only one register here. All addresses in this range read and write to it rotated relative to their addresses. Write to 30 and read from 31 rotates one bit to the right. Write to 38 and read from 30 rotates 8 bits to the left.
+47. Unsigned counter which counts down when Und1 is read and counts up when Ovr1 is read.
+48. Unsigned Limit register against which Cnt1 is compared.
+49. Unsigned register which returns Und1 if Cnt1 =< Lim1 else returns Ovr1. Reading decrements Cnt1. DMA Rd does not affect Cnt1.
+50. Unsigned register which returns Ovr1 if Cnt1 >= Lim1 else returns Und1. Reading increments Cnt1. DMA Rd does not affect Cnt1.
+51. Unsigned counter similar to Cnt1.
+52. Unsigned Limit register similar to Lim1.
+53. Unsigned register similar to Und1.
+54. Unsigned register similar to Ovr1.
+55. x here means all values from 0 to F.
+56. There are sixteen registers.
+57. These addresses use the Ax registers as memory pointers for read and write.
+58. These addresses use the Ax registers as stack pointers. Postdecremented read, Preincremented write.
+59. These addresses use the Ax registers as stack pointers. Predecremented read, Postincremented write.
+60. These addresses use the Ax registers as stack pointers. Postincremented read, Predecremented write.
+61. These addresses use the Ax registers as stack pointers. Preincremented read, Postdecremented write.
   - 00FF is the system stack used for Call and Relative Call when the AP gets pushed.
-60. There is only one register in the next 0x80 addresses. It gets CHOPped into pieces and put back together.
-61. CHOP may be used as a memory pointer by using this address.
-62. CHOP Low Half and Chop High Half are read and written here. They are in the low bits of a read. The high bits of the read are all zeroes. Only the low bits of a write are used. The high bits of the write are irrelevant and ignored.
-63. CHOP in 4 16-bit quarters. Upper bits are zeroes for read and don't care for write.
-64. CHOP 8 Bytes.
-65. CHOP 16 Nibbles (4 Bits each).
-66. CHOP Pairs of Bits. There are 32 of them.
-67. CHOP Bits, all 64 of them individually addressable.
-68. Small constant ROM. There is not actually a ROM here. With a little bit of hardware we can detect reads in this range and return the low 16 bits of address, eliminating the need to store small constants in the 0000-FFFF range in memory or to use them as immediate data in APX read instruction. With the huge memory space we have, I don't consider this wasteful.
+62. There is only one register in the next 0x80 addresses. It gets CHOPped into pieces and put back together.
+63. CHOP may be used as a memory pointer by using this address.
+64. CHOP Low Half and Chop High Half are read and written here. They are in the low bits of a read. The high bits of the read are all zeroes. Only the low bits of a write are used. The high bits of the write are irrelevant and ignored.
+65. CHOP in 4 16-bit quarters. Upper bits are zeroes for read and don't care for write.
+66. CHOP 8 Bytes.
+67. CHOP 16 Nibbles (4 Bits each).
+68. CHOP Pairs of Bits. There are 32 of them.
+69. CHOP Bits, all 64 of them individually addressable.
+70. Small constant ROM. There is not actually a ROM here. With a little bit of hardware we can detect reads in this range and return the low 16 bits of address, eliminating the need to store small constants in the 0000-FFFF range in memory or to use them as immediate data in APX read instruction. With the huge memory space we have, I don't consider this wasteful.
