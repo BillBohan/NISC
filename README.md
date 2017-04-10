@@ -110,22 +110,52 @@ ROM is expected at the highest part of memory.
 <td>0012</td><td>6</td><td>SWAP</td><td>TBD</td><td>ACC modified</td><td>TBD</td><td>no effect</td><td>55</td>
 </tr>
 <tr>
-<td>0013</td><td>64</td><td>ILVI</td><td>High ILV</td><td>Bit interleave</td><td>High ILV</td><td>load only</td><td>56</td>
+<td>0013</td><td>64</td><td>ILVI</td><td>High ILVI</td><td>Bit interleave</td><td>High ILVI</td><td>load only</td><td>56</td>
 </tr>
 <tr>
-<td>0014</td><td>64</td><td>DLVI</td><td>High DLV</td><td>Bit deinterleave</td><td>High DLV</td><td>load only</td><td>57</td>
+<td>0014</td><td>64</td><td>DLVI</td><td>High DLVI</td><td>Bit deinterleave</td><td>High DLVI</td><td>load only</td><td>57</td>
 </tr>
 <tr>
-<td>0013</td><td>64</td><td>C</td><td>C/NC Value</td><td>C Value</td><td> C Val</td><td>C Val</td><td>23 </td>
+<td>0015</td><td>64</td><td>ILVP</td><td>High ILVP</td><td>Pair interleave</td><td>High ILVP</td><td>load only</td><td>58</td>
 </tr>
 <tr>
-<td>0014</td><td>64</td><td>NC</td><td> C/NC Value</td><td>NC Value</td><td>NC Val</td><td> NC Val</td><td>24 </td>
+<td>0016</td><td>64</td><td>DLVP</td><td>High DLVP</td><td>Pair deinterleave</td><td>High DLVP</td><td>load only</td><td>59</td>
 </tr>
 <tr>
-<td>0015</td><td>64</td><td>Z</td><td>Z/NZ Value</td><td>Z Value</td><td> Z Val</td><td>Z Val</td><td>25</td>
+<td>0017</td><td>64</td><td>ILVN</td><td>High ILVN</td><td>Nibble interleave</td><td>High ILVN</td><td>load only</td><td>60</td>
 </tr>
 <tr>
-<td>0016</td><td>64</td><td>NZ</td><td> Z/NZ Value</td><td>NZ Value</td><td>NZ Val</td><td> NZ Val</td><td>26</td>
+<td>0018</td><td>64</td><td>DLVN</td><td>High DLVN</td><td>Nibble deinterleave</td><td>High DLVN</td><td>load only</td><td>61</td>
+</tr>
+<tr>
+<td>0019</td><td>64</td><td>ILVB</td><td>High ILVB</td><td>Byte interleave</td><td>High ILVB</td><td>load only</td><td>62</td>
+</tr>
+<tr>
+<td>001A</td><td>64</td><td>DLVB</td><td>High DLVB</td><td>Byte deinterleave</td><td>High DLVB</td><td>load only</td><td>63</td>
+</tr>
+<tr>
+<td>001B</td><td>64</td><td>ILVQ</td><td>High ILVQ</td><td>Quarter interleave</td><td>High ILVQ</td><td>load only</td><td>64</td>
+</tr>
+<tr>
+<td>001C</td><td>64</td><td>DLVQ</td><td>High DLVQ</td><td>Quarter deinterleave</td><td>High DLVQ</td><td>load only</td><td>65</td>
+</tr>
+<tr>
+<td>001D</td><td>64</td><td>ILVH</td><td>High ILVH</td><td>Half interleave</td><td>High ILVH</td><td>load only</td><td>66</td>
+</tr>
+<tr>
+<td>001E</td><td>64</td><td>DLVH</td><td>High DLVH</td><td>Half deinterleave</td><td>High DLVH</td><td>load only</td><td>67</td>
+</tr>
+<tr>
+<td>001F</td><td>64</td><td>C</td><td>C/NC Value</td><td>C Value</td><td> C Val</td><td>C Val</td><td>23 </td>
+</tr>
+<tr>
+<td>0020</td><td>64</td><td>NC</td><td> C/NC Value</td><td>NC Value</td><td>NC Val</td><td> NC Val</td><td>24 </td>
+</tr>
+<tr>
+<td>0021</td><td>64</td><td>Z</td><td>Z/NZ Value</td><td>Z Value</td><td> Z Val</td><td>Z Val</td><td>25</td>
+</tr>
+<tr>
+<td>0022</td><td>64</td><td>NZ</td><td> Z/NZ Value</td><td>NZ Value</td><td>NZ Val</td><td> NZ Val</td><td>26</td>
 </tr>
 <tr>
 <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>29</td>
@@ -398,5 +428,15 @@ NOTES:
   - Bit 3 swaps Bytes within Quarter Words
   - Bit 4 swaps Quarter Words within Half Words
   - Bit 5 swaps Half Words within ACC
-56. Bits are interleaved with Bits of ACC. Low order bits are in ACC. High order bits are available here.
-57. Bits are deinterleaved with Bits of ACC. Odd bits in ACC. Even bits are available here.
+56. Individual Bits are interleaved with Bits of ACC. Low order bits are in ACC. High order bits are available here.
+57. Individual Bits are deinterleaved with Bits of ACC. Odd bits in ACC. Even bits are available here.
+58. Bit Pairs are interleaved with Bits of ACC. Low order Pairs are in ACC. High order Pairs are available here.
+59. Bit Pairs are deinterleaved with Bits of ACC. Odd Pairs in ACC. Even Pairs are available here.
+60. Nibbles are interleaved with ACC. Low order Nibbles are in ACC. High order Nibbles are available here.
+61. Nibbles are deinterleaved with ACC. Odd Nibbles in ACC. Even Nibbles are available here.
+62. Bytes are interleaved with ACC. Low order Bytes are in ACC. High order Bytes are available here.
+63. Byte are deinterleaved with ACC. Odd Bytes in ACC. Even Bytes are available here.
+64. Quarter Words are interleaved with ACC. Low order Quarters are in ACC. High order Quarters are available here.
+65. Quarter Words are deinterleaved with ACC. Odd Quarters in ACC. Even Quarters are available here.
+66. Half Words are interleaved with ACC. Low Halves are in ACC. High Halves are available here.
+67. Half Words are deinterleaved with ACC. Odd Halves in ACC. Even Halves are available here.
