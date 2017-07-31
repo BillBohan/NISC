@@ -29,7 +29,7 @@ What will be described is NISC6 because data and addresses are 2 to the 6th powe
 - It is Little Endian where applicable.
 - Peripherals should be memory mapped.
  
-This is the VonNewman version with unified code and data address space.
+This is the Von Neumann version with unified code and data address space.
 Using a Harvard architecture with separate code and data spaces would double throughput but would require instruction invalidation for Jumps and Calls. I wanted to keep it simple.
 Making data and address widths equal allows us to fetch an address in a single cycle. If the data width is less than address width then multiple cycles are needed to fetch an address. With a wider data width, both addresses may be read at once saving a cycle.
 
